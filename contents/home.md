@@ -4,9 +4,6 @@ Fengxiao Tang is an full professor with School of Computer Science and Engineeri
 #### Email
 tangfengxiao@csu.edu.cn
 
-### Tel
-+86-139-9645-5380
-
 #### Academic Background
 Bachelor degree, Wuhan University of Technology, China, 2012.\
 Master degree, Central South University, China, 2015.\
