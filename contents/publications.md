@@ -1,9 +1,9 @@
 ## JOURNALS
-- Zhiqi Guo, **Fengxiao Tang**, Linfeng Luo, Ming Zhao, Nei Kato. **A Survey on Applications of Large Language Model-Driven Digital Twins for Intelligent Network Optimization**. <u>IEEE Communications Surveys & Tutorials</u> (2025). (JCR Q1, IF=34.4)
+- Zhiqi Guo, **Fengxiao Tang***, Linfeng Luo, Ming Zhao, Nei Kato. **A Survey on Applications of Large Language Model-Driven Digital Twins for Intelligent Network Optimization**. <u>IEEE Communications Surveys & Tutorials</u> (2025). (JCR Q1, IF=34.4)
 
 - **Fengxiao Tang**, Linfeng Luo, Zhiqi Guo, Ming Zhao, Nei Kato. **Semantic Twin Network: Bridging Real-World and Virtual Networks with Semantics**. <u>IEEE Wireless Communications</u> (2025). (JCR Q1, IF=10.9)
 
-- Jingjing Tan, **Fengxiao Tang**, Ming Zhao, Nei Kato. **Outage Probability, Performance, and Fairness Analysis of Space-Air-Ground Integrated Network (SAGIN): UAV Altitude and Position Angle**. <u>IEEE Transactions on Wireless Communications</u> (2025). (JCR Q1, IF=10.7)
+- Jingjing Tan, **Fengxiao Tang***, Ming Zhao, Nei Kato. **Outage Probability, Performance, and Fairness Analysis of Space-Air-Ground Integrated Network (SAGIN): UAV Altitude and Position Angle**. <u>IEEE Transactions on Wireless Communications</u> (2025). (JCR Q1, IF=10.7)
 
 - Bin Wang, Zhao Tian, **Fengxiao Tang**, Heng Pan, Wei She, Wei Liu. **Blockchain-Empowered Asynchronous Federated Reinforcement Learning for IoT-Based Traffic Trajectory Prediction**. <u>IEEE Internet of Things Journal</u> (2025). (JCR Q1, IF=8.9)
 
@@ -15,7 +15,7 @@
 
 - Zheng Zhang, Feng Zeng, **Fengxiao Tang**. **Vehicle-Assisted Data Sensing in Vehicle Edge Metaverse: A Game Theory Approach**. <u> IEEE Transactions on Vehicular Technology</u> (2025). (JCR Q1, IF=6.1)
 
-- Tiao Tan, **Fengxiao Tang**, Ming Zhao. **Adapting Network Information to Semantics for Generalizable and Plug-and-Play Multi-Scenario Network Diagnosis**. arXiv:2501.16842 (2025).
+- Tiao Tan, **Fengxiao Tang***, Ming Zhao. **Adapting Network Information to Semantics for Generalizable and Plug-and-Play Multi-Scenario Network Diagnosis**. arXiv:2501.16842 (2025).
 
 - Yeguang Qin, Jie Tang, **Fengxiao Tang**, Ming Zhao, Nei Kato. **Multi-Agent Reinforcement Learning in Adversarial Game Environments: Personalized Anti-Interference Strategies for Heterogeneous UAV Communication**. <u>IEEE Transactions on Mobile Computing</u> (2025). (JCR Q1, IF=7.7)
 
