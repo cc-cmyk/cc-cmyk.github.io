@@ -1,14 +1,8 @@
-<div id="papers-list" class="papers-list">
-    <div class="loading-text">Loading latest publications from Google Scholar...</div>
+## SELECTED RECENT PUBLICATIONS 
+
+<div id="papers-list" style="margin-bottom: 30px;">
+    <div class="loading-text">Loading latest publications...</div>
 </div>
-
-<br>
-<hr>
-<br>
-
-## JOURNALS
-- Zhiqi Guo, **Fengxiao Tang***, Linfeng Luo, Ming Zhao, Nei Kato. **A Survey on Applications of Large Language Model-Driven Digital Twins for Intelligent Network Optimization**. <u>IEEE Communications Surveys & Tutorials</u> (2025). (JCR Q1, IF=34.4)
-... (后面保持不变)
 
 ## JOURNALS
 - Zhiqi Guo, **Fengxiao Tang***, Linfeng Luo, Ming Zhao, Nei Kato. **A Survey on Applications of Large Language Model-Driven Digital Twins for Intelligent Network Optimization**. <u>IEEE Communications Surveys & Tutorials</u> (2025). (JCR Q1, IF=34.4)
