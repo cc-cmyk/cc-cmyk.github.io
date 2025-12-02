@@ -12,16 +12,20 @@ def fetch_data():
         print("Error: SERP_API_KEY not found.")
         return None
 
+    # === 关键设置 ===
     params = {
         "engine": "google_scholar_author",
         "author_id": SCHOLAR_ID,
         "api_key": API_KEY,
-        "hl": "en",      # 强制英文
-        "gl": "us",      # 关键修改：强制美国地区 (解决排版解析失败的核心)
+        "hl": "en",      # 语言：英文
+        "gl": "us",      # 地区：美国 (必须加这个，否则 SerpApi 经常抓不到引用表)
         "sort": "pubdate"
     }
 
-    print("Requesting SerpApi (US/English Mode)...")
+    # 注意看这里的打印文字，我改成了 "US Mode"
+    # 如果你在日志里看不到这句话，说明代码没更新成功！
+    print(">>> STARTING FETCH: US Mode (gl=us) <<<")
+    
     try:
         response = requests.get("https://serpapi.com/search", params=params, timeout=30)
         data = response.json()
@@ -33,41 +37,33 @@ def fetch_data():
         print(f"SerpApi Error: {data['error']}")
         return None
 
-    # === DEBUG: 打印更多信息以便排查 ===
+    # === 调试信息 ===
     author = data.get("author", {})
-    print(f"DEBUG: Author Name: {author.get('name')}")
-    print(f"DEBUG: Author Keys: {list(author.keys())}")
+    # 如果这里依然没有 cited_by，我们在日志里能看到
+    print(f"DEBUG keys available: {list(author.keys())}")
     
-    # === 数据提取逻辑 (增强版) ===
+    # === 数据提取 ===
     stats = {"citations": 0, "h_index": 0, "i10_index": 0}
 
-    # 1. 优先从 author.cited_by.table 提取
     cited_by_table = author.get("cited_by", {}).get("table", [])
     
-    # 2. 如果 table 为空，尝试打印警告
-    if not cited_by_table:
-        print("WARNING: 'cited_by' table not found in author data.")
-    
-    for row in cited_by_table:
-        row_str = str(row).lower()
-        val = row.get("citations", {}).get("all", 0)
-        
-        if "citation" in row_str:
-            stats["citations"] = val
-        if "h-index" in row_str:
-            stats["h_index"] = val
-        if "i10-index" in row_str:
-            stats["i10_index"] = val
+    if cited_by_table:
+        for row in cited_by_table:
+            row_str = str(row).lower()
+            val = row.get("citations", {}).get("all", 0)
+            if "citation" in row_str: stats["citations"] = val
+            if "h-index" in row_str: stats["h_index"] = val
+            if "i10-index" in row_str: stats["i10_index"] = val
+    else:
+        print("!!! WARNING: Citation table is MISSING in the response !!!")
 
-    print(f"✅ Extracted Data: {stats}")
+    print(f"✅ Extracted Stats: {stats}")
 
-    # 处理论文列表
+    # 处理论文
     papers = []
     for art in data.get("articles", [])[:10]:
         c_val = art.get("cited_by", {}).get("value")
-        if c_val is None:
-            c_val = 0
-        
+        if c_val is None: c_val = 0
         papers.append({
             "title": art.get("title"),
             "link": art.get("link"),
@@ -75,7 +71,7 @@ def fetch_data():
             "year": art.get("year", "N/A")
         })
 
-    # === 强制更新时间戳 ===
+    # === 强制更新 ===
     output = {
         "last_updated": time.strftime("%Y-%m-%d %H:%M:%S"), 
         "citations": stats["citations"],
