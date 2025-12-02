@@ -1,0 +1,89 @@
+/* --- 学术主页专用样式 --- */
+
+/* 1. 统计卡片区域 (Citations, h-index) */
+.stats-grid {
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  margin-top: 15px;
+  margin-bottom: 30px;
+}
+
+.stat-card {
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  border-left: 4px solid #0056b3; /* 学术蓝左边框 */
+  border-radius: 4px;
+  padding: 10px 20px;
+  min-width: 100px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+}
+
+.stat-number {
+  display: block;
+  font-size: 24px;
+  font-weight: 700;
+  color: #0056b3;
+}
+
+.stat-label {
+  font-size: 12px;
+  color: #666;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+/* 2. 论文列表区域 */
+.papers-list {
+  margin-top: 20px;
+}
+
+.paper-item {
+  padding: 12px 0;
+  border-bottom: 1px dashed #eee;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.paper-content {
+  flex: 1;
+  padding-right: 15px;
+}
+
+.paper-title {
+  font-weight: 600;
+  color: #333;
+  text-decoration: none;
+  font-size: 16px;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.paper-title:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
+.paper-meta {
+  font-size: 14px;
+  color: #777;
+}
+
+/* 引用数小角标 */
+.citation-badge {
+  background-color: #f0f7ff;
+  color: #0056b3;
+  padding: 2px 8px;
+  border-radius: 10px;
+  font-size: 12px;
+  font-weight: bold;
+  white-space: nowrap;
+  border: 1px solid #d0e3ff;
+}
+
+.loading-text {
+  color: #888;
+  font-style: italic;
+  font-size: 14px;
+}

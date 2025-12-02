@@ -1,0 +1,32 @@
+name: Update Scholar Stats
+
+on:
+  schedule:
+    - cron: '0 0 * * 1' # 每周一自动运行
+  workflow_dispatch:      # 允许你在网页上手动点击运行
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v3
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '3.9'
+      - run: pip install -r scripts/requirements.txt
+      - name: Run Script
+        env:
+          SERP_API_KEY: ${{ secrets.SERP_API_KEY }} # 这里会自动读取你刚才存的 Secret
+        run: python scripts/update_scholar.py
+      - name: Commit & Push
+        run: |
+          git config --global user.name 'Scholar Bot'
+          git config --global user.email 'bot@github.com'
+          # 如果 scholar.json 发生了变化才提交
+          if [[ -n $(git status -s static/scholar.json) ]]; then
+            git add static/scholar.json
+            git commit -m "Auto-update scholar stats [skip ci]"
+            git push
+          fi
