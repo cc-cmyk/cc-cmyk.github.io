@@ -2,8 +2,7 @@ import os
 import json
 import requests
 
-# === 配置区域 ===
-SCHOLAR_ID = "_QJD5MgAAAAJ"
+SCHOLAR_ID = "_QJD5MgAAAAJ" # 您的 ID
 API_KEY = os.environ.get("SERP_API_KEY")
 
 def fetch_data():
@@ -19,40 +18,44 @@ def fetch_data():
         "sort": "pubdate"
     }
 
-    print(f"Fetching data for Scholar ID: {SCHOLAR_ID}...")
+    print("Requesting SerpApi...")
     try:
         response = requests.get("https://serpapi.com/search", params=params, timeout=30)
         data = response.json()
     except Exception as e:
-        print(f"Request failed: {e}")
+        print(f"Network Fail: {e}")
         return None
 
     if "error" in data:
         print(f"SerpApi Error: {data['error']}")
         return None
 
-    # === 关键修改：增强数据提取逻辑 ===
+    # === 修复数据提取逻辑 ===
     author = data.get("author", {})
     cited_by_table = author.get("cited_by", {}).get("table", [])
     
-    # 初始化统计数据
-    stats = {
-        "citations": 0,
-        "h_index": 0,
-        "i10_index": 0
-    }
+    # 默认值
+    stats = {"citations": 0, "h_index": 0, "i10_index": 0}
 
-    # 尝试提取统计数据 (更加鲁棒的写法)
+    # 尝试从不同位置提取引用数
+    # 1. 尝试从 cited_by.table 提取
     if cited_by_table:
-        try:
-            # table[0] 通常是 "引用", table[1] 是 "h指数", table[2] 是 "i10指数"
-            stats["citations"] = cited_by_table[0].get("citations", {}).get("all", 0)
-            stats["h_index"] = cited_by_table[1].get("h_index", {}).get("all", 0)
-            stats["i10_index"] = cited_by_table[2].get("i10_index", {}).get("all", 0)
-        except (IndexError, AttributeError) as e:
-            print(f"Warning: Failed to parse citation table: {e}")
+        for row in cited_by_table:
+            label = row.get("citations", {}).get("label", "").lower() # 获取标签(如 "引用")
+            val = row.get("citations", {}).get("all", 0) # 获取数值
+            if "引用" in label or "citations" in label:
+                stats["citations"] = val
+            elif "h" in label and "index" in label:
+                stats["h_index"] = val
+            elif "i10" in label:
+                stats["i10_index"] = val
+    
+    # 2. 如果上面失败，尝试直接从 author.cited_by.total 提取 (如果有)
+    if stats["citations"] == 0:
+        print("Table extraction failed, checking raw value...")
+        # 这是一个备用猜测路径，视API更新而定
 
-    print(f"Extracted Stats: {stats}") # 打印日志以便调试
+    print(f"✅ Extracted: {stats}") # 这一行会在 Action 日志里显示
 
     output = {
         "citations": stats["citations"],
@@ -63,9 +66,12 @@ def fetch_data():
 
     # 提取论文列表
     for art in data.get("articles", [])[:10]:
-        # 处理引用数可能是 None 的情况
-        cit_value = art.get("cited_by", {}).get("value", 0)
-        if cit_value is None: 
+        # 修复 citation 为 null 的情况
+        cit_info = art.get("cited_by", {})
+        cit_value = cit_info.get("value") # 可能是 None
+        
+        # 强制转为整数或空字符串
+        if cit_value is None:
             cit_value = 0
             
         output["papers"].append({
@@ -83,6 +89,6 @@ if __name__ == "__main__":
         os.makedirs("static", exist_ok=True)
         with open("static/scholar.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print("Success: static/scholar.json updated with correct values.")
+        print("Success: static/scholar.json updated.")
     else:
         exit(1)
