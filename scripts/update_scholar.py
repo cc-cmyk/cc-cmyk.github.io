@@ -12,15 +12,17 @@ def fetch_data():
         print("Error: SERP_API_KEY not found.")
         return None
 
+    # === 关键修改 1: 将语言强制设为英文 (en) ===
+    # 中文 (zh-CN) 经常导致 SerpApi 解析不到引用数据
     params = {
         "engine": "google_scholar_author",
         "author_id": SCHOLAR_ID,
         "api_key": API_KEY,
-        "hl": "zh-CN",
+        "hl": "en",  
         "sort": "pubdate"
     }
 
-    print("Requesting SerpApi...")
+    print("Requesting SerpApi (English Mode)...")
     try:
         response = requests.get("https://serpapi.com/search", params=params, timeout=30)
         data = response.json()
@@ -32,26 +34,26 @@ def fetch_data():
         print(f"SerpApi Error: {data['error']}")
         return None
 
-    # === DEBUG: 打印现有字段，方便调试 ===
-    author = data.get("author", {})
-    print(f"DEBUG keys in author: {author.keys()}")
-    
     # === 数据提取逻辑 ===
+    author = data.get("author", {})
     stats = {"citations": 0, "h_index": 0, "i10_index": 0}
 
-    # 方法 1: 尝试从表格中模糊搜索 (更强壮的查找方式)
+    # 打印调试信息：看看这次 author 里有哪些字段
+    print(f"DEBUG keys in author: {author.keys()}")
+
+    # 尝试提取 (针对英文版结构)
     cited_by_table = author.get("cited_by", {}).get("table", [])
     if cited_by_table:
         for row in cited_by_table:
-            # 把整行转为小写字符串进行搜索，防止大小写或字段名变化
             row_str = str(row).lower()
             val = row.get("citations", {}).get("all", 0)
             
-            if "引用" in row_str or "citation" in row_str:
+            # 英文关键词匹配
+            if "citation" in row_str:
                 stats["citations"] = val
-            if "h" in row_str and "index" in row_str:
+            if "h-index" in row_str:
                 stats["h_index"] = val
-            if "i10" in row_str:
+            if "i10-index" in row_str:
                 stats["i10_index"] = val
 
     print(f"✅ Extracted Data: {stats}")
@@ -60,7 +62,6 @@ def fetch_data():
     papers = []
     for art in data.get("articles", [])[:10]:
         c_val = art.get("cited_by", {}).get("value")
-        # 修复 null 问题
         if c_val is None:
             c_val = 0
         
@@ -71,8 +72,8 @@ def fetch_data():
             "year": art.get("year", "N/A")
         })
 
-    # === 关键：强制更新时间戳 ===
-    # 只要有这个字段，Git 就一定会提交更新
+    # === 关键修改 2: 强制更新时间戳 ===
+    # 加入这个字段后，文件内容每次都不一样，Git 才会提交更新
     output = {
         "last_updated": time.strftime("%Y-%m-%d %H:%M:%S"), 
         "citations": stats["citations"],
