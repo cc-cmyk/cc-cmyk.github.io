@@ -47,6 +47,8 @@ function renderStats(data) {
     });
 }
 
+// ...前面的代码保持不变...
+
 function renderPapers(papers) {
     const papersContainer = document.getElementById('papers-list');
     if (!papersContainer) return;
@@ -58,17 +60,30 @@ function renderPapers(papers) {
         return;
     }
 
+    // 创建一个无序列表 ul
+    const ul = document.createElement('ul');
+    ul.style.listStyleType = 'disc'; // 实心圆点
+    ul.style.paddingLeft = '20px';
+
     papers.forEach(paper => {
-        const div = document.createElement('div');
-        div.className = 'paper-item';
+        const li = document.createElement('li');
+        li.style.marginBottom = '15px'; //每项之间的间距
         
-        div.innerHTML = `
-            <div class="paper-content">
-                <a href="${paper.link}" class="paper-title" target="_blank">${paper.title}</a>
-                <div class="paper-meta">${paper.year}</div>
-            </div>
-            ${paper.citation ? `<span class="citation-badge" title="Cited by">${paper.citation}</span>` : ''}
+        // 构建类似图2的格式: 作者(这里没有作者信息，只能模拟). 标题. 期刊(没有期刊信息). 年份.
+        // 因为SerpApi简版数据只有标题、链接、引用数、年份。
+        // 我们做成：Title. (Year). [Cited by X]
+        
+        li.innerHTML = `
+            <span style="font-size: 1rem; color: #333;">
+                <a href="${paper.link}" target="_blank" style="text-decoration:none; color:#000; font-weight:normal;">
+                    ${paper.title}
+                </a>. 
+                <span style="color: #666;">(${paper.year})</span>.
+                ${paper.citation > 0 ? `<span style="font-size:0.85rem; color:#0056b3;">[Cited by ${paper.citation}]</span>` : ''}
+            </span>
         `;
-        papersContainer.appendChild(div);
+        ul.appendChild(li);
     });
+
+    papersContainer.appendChild(ul);
 }
