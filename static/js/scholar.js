@@ -1,6 +1,5 @@
-// 确保地址正确
-// 使用 CDN 加速，解决国内无法加载的问题
-const jsonPath = 'https://cdn.jsdelivr.net/gh/cc-cmyk/cc-cmyk.github.io@main/static/scholar.json';
+// 使用绝对路径
+const jsonPath = 'https://cc-cmyk.github.io/static/scholar.json';
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Scholar script loaded...");
@@ -46,12 +45,20 @@ function waitForElement(id, callback) {
     }
 
     // 否则，每 500 毫秒检查一次，直到找到为止
+    // 设置一个超时（比如 10 秒），防止无限死循环
+    let checks = 0;
     const interval = setInterval(() => {
         const el = document.getElementById(id);
         if (el) {
             console.log(`Element ${id} found! Rendering...`);
             clearInterval(interval); // 找到了，停止轮询
             callback(el);
+        }
+        
+        checks++;
+        if (checks > 20) { // 10秒后还没找到就放弃
+             clearInterval(interval);
+             console.warn(`Element ${id} not found after 10s.`);
         }
     }, 500);
 }
