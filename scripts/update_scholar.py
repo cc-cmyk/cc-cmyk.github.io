@@ -3,10 +3,8 @@ import json
 import requests
 
 # === 配置区域 ===
-# 建议使用环境变量，或者暂时填入您的 ID
-SCHOLAR_ID = "_QJD5MgAAAAJ"  # 请替换为唐枫枭教授的真实ID
+SCHOLAR_ID = "_QJD5MgAAAAJ"
 API_KEY = os.environ.get("SERP_API_KEY")
-
 
 def fetch_data():
     if not API_KEY:
@@ -21,7 +19,7 @@ def fetch_data():
         "sort": "pubdate"
     }
 
-    print("Fetching Google Scholar data...")
+    print(f"Fetching data for Scholar ID: {SCHOLAR_ID}...")
     try:
         response = requests.get("https://serpapi.com/search", params=params, timeout=30)
         data = response.json()
@@ -33,35 +31,58 @@ def fetch_data():
         print(f"SerpApi Error: {data['error']}")
         return None
 
-    # 解析数据
+    # === 关键修改：增强数据提取逻辑 ===
     author = data.get("author", {})
-    cited_by = author.get("cited_by", {}).get("table", [])
+    cited_by_table = author.get("cited_by", {}).get("table", [])
+    
+    # 初始化统计数据
+    stats = {
+        "citations": 0,
+        "h_index": 0,
+        "i10_index": 0
+    }
+
+    # 尝试提取统计数据 (更加鲁棒的写法)
+    if cited_by_table:
+        try:
+            # table[0] 通常是 "引用", table[1] 是 "h指数", table[2] 是 "i10指数"
+            stats["citations"] = cited_by_table[0].get("citations", {}).get("all", 0)
+            stats["h_index"] = cited_by_table[1].get("h_index", {}).get("all", 0)
+            stats["i10_index"] = cited_by_table[2].get("i10_index", {}).get("all", 0)
+        except (IndexError, AttributeError) as e:
+            print(f"Warning: Failed to parse citation table: {e}")
+
+    print(f"Extracted Stats: {stats}") # 打印日志以便调试
 
     output = {
-        "citations": cited_by[0].get("citations", {}).get("all", 0) if len(cited_by) > 0 else 0,
-        "h_index": cited_by[1].get("h_index", {}).get("all", 0) if len(cited_by) > 1 else 0,
+        "citations": stats["citations"],
+        "h_index": stats["h_index"],
+        "i10_index": stats["i10_index"],
         "papers": []
     }
 
-    for art in data.get("articles", [])[:10]:  # 取最新10篇
+    # 提取论文列表
+    for art in data.get("articles", [])[:10]:
+        # 处理引用数可能是 None 的情况
+        cit_value = art.get("cited_by", {}).get("value", 0)
+        if cit_value is None: 
+            cit_value = 0
+            
         output["papers"].append({
             "title": art.get("title"),
             "link": art.get("link"),
-            "citation": art.get("cited_by", {}).get("value", ""),
-            "year": art.get("year", "")
+            "citation": cit_value,
+            "year": art.get("year", "N/A")
         })
 
     return output
 
-
 if __name__ == "__main__":
     data = fetch_data()
     if data:
-        # === 关键修改：直接存入 static 文件夹 ===
-        # 确保 static 文件夹存在
         os.makedirs("static", exist_ok=True)
         with open("static/scholar.json", "w", encoding="utf-8") as f:
             json.dump(data, f, ensure_ascii=False, indent=2)
-        print("Success: static/scholar.json updated.")
+        print("Success: static/scholar.json updated with correct values.")
     else:
         exit(1)
