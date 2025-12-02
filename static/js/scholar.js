@@ -1,5 +1,6 @@
 // 确保地址正确
-const jsonPath = 'https://cc-cmyk.github.io/static/scholar.json';
+// 使用 CDN 加速，解决国内无法加载的问题
+const jsonPath = 'https://cdn.jsdelivr.net/gh/cc-cmyk/cc-cmyk.github.io@main/static/scholar.json';
 
 document.addEventListener("DOMContentLoaded", function() {
     console.log("Scholar script loaded...");
