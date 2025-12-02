@@ -1,67 +1,68 @@
 {
+  "last_updated": "2025-12-02 08:55:12",
   "citations": 0,
   "h_index": 0,
   "i10_index": 0,
   "papers": [
     {
-      "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:UHK10RUVsp4C",
-      "citation": 0,
-      "year": "2025"
+      "title": "State-of-the-art deep learning: Evolving machine intelligence toward tomorrow’s intelligent network traffic control systems",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:u-x6o8ySG0sC",
+      "citation": 1036,
+      "year": "2017"
     },
     {
-      "title": "Wi-Fi 8: The Next Generation of Wireless Connectivity",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:dQ2og3OwTAUC",
-      "citation": 0,
-      "year": "2025"
+      "title": "6G: Opening new horizons for integration of comfort, security, and intelligence",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:8k81kl-MbHgC",
+      "citation": 792,
+      "year": "2020"
     },
     {
-      "title": "FGAA: Enhancing adversarial robustness in AIoT-enabled smart systems via Fine-Grained Activation Alignment",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:hkOj_22Ku90C",
-      "citation": 0,
-      "year": "2025"
+      "title": "Future intelligent and secure vehicular network toward 6G: Machine-learning approaches",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:0EnyYjriUFMC",
+      "citation": 694,
+      "year": "2019"
     },
     {
-      "title": "Building Digital Twin Networks for Heterogeneous UAV Clusters: A Low-Latency Agent Gateway Selection Method",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:N5tVd3kTz84C",
-      "citation": 0,
-      "year": "2025"
+      "title": "The deep learning vision for heterogeneous network traffic control: Proposal, challenges, and future perspective",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:u5HHmVD_uO8C",
+      "citation": 494,
+      "year": "2016"
     },
     {
-      "title": "Chain or tree? Re-evaluating complex reasoning from the perspective of a matrix of thought",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:PR6Y55bgFSsC",
-      "citation": 0,
-      "year": "2025"
+      "title": "Ten challenges in advancing machine learning technologies toward 6G",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:MXK_kJrjxJIC",
+      "citation": 468,
+      "year": "2020"
     },
     {
-      "title": "MTQA: Matrix of Thought for Enhanced Reasoning in Complex Question Answering",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ye4kPcJQO24C",
-      "citation": 0,
-      "year": "2025"
+      "title": "Optimizing space-air-ground integrated networks by artificial intelligence",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:Tyk-4Ss8FVUC",
+      "citation": 461,
+      "year": "2019"
     },
     {
-      "title": "Unifying AI for Networking and Networking for AI: the Self-evolving Edge Learning",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:LjlpjdlvIbIC",
-      "citation": 0,
-      "year": "2025"
+      "title": "Routing or computing? The paradigm shift towards intelligent computer network packet transmission based on deep learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:d1gkVwhDpl0C",
+      "citation": 401,
+      "year": "2017"
     },
     {
-      "title": "RTdetector: Deep Transformer Networks for Time Series Anomaly Detection Based on Reconstruction Trend",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:WqliGbK-hY8C",
-      "citation": 0,
-      "year": "2025"
+      "title": "The roadmap of communication and networking in 6G for the metaverse",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:dfsIfKJdRG4C",
+      "citation": 352,
+      "year": "2022"
     },
     {
-      "title": "Optimizing Smart Wireless Charging and Data Acquisition for UAVs with Battery Life Prediction",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:5awf1xo2G04C",
-      "citation": 0,
-      "year": "2025"
+      "title": "On removing routing protocol from future wireless networks: A real-time deep learning approach for intelligent traffic control",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:2osOgNQ5qMEC",
+      "citation": 307,
+      "year": "2017"
     },
     {
-      "title": "LRCTI: A Large Language Model-Based Framework for Multi-Step Evidence Retrieval and Reasoning in Cyber Threat Intelligence Credibility Verification",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eq2jaN3J8jMC",
-      "citation": 0,
-      "year": "2025"
+      "title": "AI models for green communications towards 6G",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&citation_for_view=_QJD5MgAAAAJ:3s1wT3WcHBgC",
+      "citation": 297,
+      "year": "2021"
     }
   ]
 }
