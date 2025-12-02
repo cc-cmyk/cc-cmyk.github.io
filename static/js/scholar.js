@@ -1,42 +1,64 @@
-// 请确保这个路径是正确的，建议用绝对路径
-const jsonPath = 'https://cc-cmyk.github.io/static/scholar.json'; 
+// 确保地址正确
+const jsonPath = 'https://cc-cmyk.github.io/static/scholar.json';
 
 document.addEventListener("DOMContentLoaded", function() {
-    console.log("Scholar script loaded, fetching from:", jsonPath);
+    console.log("Scholar script loaded...");
     
-    // 找到挂载点
-    const papersContainer = document.getElementById('papers-list');
-    
+    // 1. 先去抓取数据
     fetch(jsonPath)
         .then(response => {
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
+            if (!response.ok) throw new Error("Status: " + response.status);
             return response.json();
         })
         .then(data => {
             console.log("Data received:", data);
             
-            // 1. 渲染统计卡片 (如果有的话)
-            renderStats(data);
+            // 2. 数据拿到后，开始“蹲守”网页元素出现
+            // 因为您的网页是动态加载 Markdown 的，元素不会立刻出现
             
-            // 2. 渲染论文列表
-            if (data.papers && data.papers.length > 0) {
-                renderPapers(data.papers, papersContainer);
-            } else {
-                if(papersContainer) papersContainer.innerHTML = '<div>No recent papers found in data.</div>';
-            }
+            // 等待论文列表容器出现
+            waitForElement('papers-list', function(container) {
+                renderPapers(data.papers, container);
+            });
+            
+            // 等待统计数据容器出现
+            waitForElement('stats-grid', function(container) {
+                renderStats(data);
+            });
         })
         .catch(error => {
-            console.error('Error loading scholar data:', error);
-            if(papersContainer) papersContainer.innerHTML = `<div class="loading-text" style="color:red;">Error loading data: ${error.message}</div>`;
+            console.error('Fetch error:', error);
         });
 });
 
+/**
+ * 核心辅助函数：轮询等待元素出现
+ * @param {string} id - 元素的 ID
+ * @param {function} callback - 找到元素后的回调函数
+ */
+function waitForElement(id, callback) {
+    // 如果元素已经存在，直接执行
+    const el = document.getElementById(id);
+    if (el) {
+        callback(el);
+        return;
+    }
+
+    // 否则，每 500 毫秒检查一次，直到找到为止
+    const interval = setInterval(() => {
+        const el = document.getElementById(id);
+        if (el) {
+            console.log(`Element ${id} found! Rendering...`);
+            clearInterval(interval); // 找到了，停止轮询
+            callback(el);
+        }
+    }, 500);
+}
+
+// 渲染统计卡片
 function renderStats(data) {
     const statsContainer = document.getElementById('stats-grid');
     if (!statsContainer) return;
-
     statsContainer.innerHTML = ''; 
 
     const items = [
@@ -55,11 +77,9 @@ function renderStats(data) {
     });
 }
 
-// [核心修复]：渲染论文列表
+// 渲染论文列表
 function renderPapers(papers, container) {
-    if (!container) return;
-    
-    container.innerHTML = ''; // 清空 Loading 文字
+    container.innerHTML = ''; // 清空 Loading
 
     // 创建无序列表
     const ul = document.createElement('ul');
@@ -73,8 +93,6 @@ function renderPapers(papers, container) {
         li.style.lineHeight = '1.6';
         li.style.color = '#333';
 
-        // 构造简单的显示格式: Title. (Year). [Cited by X]
-        // 既然 API 没有作者和期刊，我们就只显示这些核心信息
         const titleHtml = `<a href="${paper.link}" target="_blank" style="font-weight:600; text-decoration:none; color:#2c3e50;">${paper.title}</a>`;
         const yearHtml = `<span style="color:#666; margin-left:5px;">(${paper.year})</span>`;
         const citeHtml = paper.citation > 0 ? `<span style="font-size:0.85em; color:#0056b3; margin-left:8px; background:#f0f7ff; padding:2px 6px; border-radius:4px;">Cited by ${paper.citation}</span>` : '';
