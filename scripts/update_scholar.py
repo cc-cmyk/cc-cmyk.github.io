@@ -12,17 +12,16 @@ def fetch_data():
         print("Error: SERP_API_KEY not found.")
         return None
 
-    # === 关键修改 1: 将语言强制设为英文 (en) ===
-    # 中文 (zh-CN) 经常导致 SerpApi 解析不到引用数据
     params = {
         "engine": "google_scholar_author",
         "author_id": SCHOLAR_ID,
         "api_key": API_KEY,
-        "hl": "en",  
+        "hl": "en",      # 强制英文
+        "gl": "us",      # 关键修改：强制美国地区 (解决排版解析失败的核心)
         "sort": "pubdate"
     }
 
-    print("Requesting SerpApi (English Mode)...")
+    print("Requesting SerpApi (US/English Mode)...")
     try:
         response = requests.get("https://serpapi.com/search", params=params, timeout=30)
         data = response.json()
@@ -34,27 +33,31 @@ def fetch_data():
         print(f"SerpApi Error: {data['error']}")
         return None
 
-    # === 数据提取逻辑 ===
+    # === DEBUG: 打印更多信息以便排查 ===
     author = data.get("author", {})
+    print(f"DEBUG: Author Name: {author.get('name')}")
+    print(f"DEBUG: Author Keys: {list(author.keys())}")
+    
+    # === 数据提取逻辑 (增强版) ===
     stats = {"citations": 0, "h_index": 0, "i10_index": 0}
 
-    # 打印调试信息：看看这次 author 里有哪些字段
-    print(f"DEBUG keys in author: {author.keys()}")
-
-    # 尝试提取 (针对英文版结构)
+    # 1. 优先从 author.cited_by.table 提取
     cited_by_table = author.get("cited_by", {}).get("table", [])
-    if cited_by_table:
-        for row in cited_by_table:
-            row_str = str(row).lower()
-            val = row.get("citations", {}).get("all", 0)
-            
-            # 英文关键词匹配
-            if "citation" in row_str:
-                stats["citations"] = val
-            if "h-index" in row_str:
-                stats["h_index"] = val
-            if "i10-index" in row_str:
-                stats["i10_index"] = val
+    
+    # 2. 如果 table 为空，尝试打印警告
+    if not cited_by_table:
+        print("WARNING: 'cited_by' table not found in author data.")
+    
+    for row in cited_by_table:
+        row_str = str(row).lower()
+        val = row.get("citations", {}).get("all", 0)
+        
+        if "citation" in row_str:
+            stats["citations"] = val
+        if "h-index" in row_str:
+            stats["h_index"] = val
+        if "i10-index" in row_str:
+            stats["i10_index"] = val
 
     print(f"✅ Extracted Data: {stats}")
 
@@ -72,8 +75,7 @@ def fetch_data():
             "year": art.get("year", "N/A")
         })
 
-    # === 关键修改 2: 强制更新时间戳 ===
-    # 加入这个字段后，文件内容每次都不一样，Git 才会提交更新
+    # === 强制更新时间戳 ===
     output = {
         "last_updated": time.strftime("%Y-%m-%d %H:%M:%S"), 
         "citations": stats["citations"],
