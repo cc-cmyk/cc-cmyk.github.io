@@ -66,16 +66,21 @@
     margin: 0;
 }
 
+/* --- 单行论文卡片 (加大呼吸感版) --- */
 .scholar-item {
-    background-color: #fff;
-    border-radius: 10px;
-    padding: 18px 24px;
-    margin-bottom: 16px;
-    border: 1px solid #f1f3f5;
-    border-left: 5px solid #0056b3; /* 左侧蓝色强调线 */
-    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
-    transition: all 0.25s ease-in-out;
-    position: relative;
+    background-color: #ffffff;
+    
+    /* 关键修改：上下20px，左右35px */
+    /* 35px 的左边距足够“空出一个逗号”甚至更宽的距离，显得很宽敞 */
+    padding: 10px 35px !important;
+    
+    margin-bottom: 20px; 
+    border-radius: 8px;
+    border: 1px solid #f0f2f5;
+    border-left: 5px solid #0056b3; 
+    box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    transition: all 0.25s ease;
+    line-height: 1.8;
 }
 
 /* 论文卡片悬停 */
