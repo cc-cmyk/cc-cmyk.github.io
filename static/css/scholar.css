@@ -1,89 +1,170 @@
-/* --- 学术主页专用样式 --- */
+/* =========================================
+   学术主页美化样式 (Modern Academic Style)
+   ========================================= */
 
-/* 1. 统计卡片区域 (Citations, h-index) */
+/* --- 1. 统计卡片区域 (Stats Grid) --- */
 .stats-grid {
-  display: flex;
-  gap: 15px;
-  flex-wrap: wrap;
-  margin-top: 15px;
-  margin-bottom: 30px;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    margin: 25px 0 40px 0;
 }
 
 .stat-card {
-  background: #fff;
-  border: 1px solid #e1e4e8;
-  border-left: 4px solid #0056b3; /* 学术蓝左边框 */
-  border-radius: 4px;
-  padding: 10px 20px;
-  min-width: 100px;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    flex: 1;
+    min-width: 140px;
+    background: #ffffff;
+    border: 1px solid #eef2f6;
+    border-radius: 12px;
+    padding: 20px;
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.03);
+    transition: all 0.3s ease;
+}
+
+/* 卡片悬停特效 */
+.stat-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 86, 179, 0.1);
+    border-color: #b3d7ff;
+}
+
+/* 顶部蓝色装饰条 */
+.stat-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 4px;
+    background: linear-gradient(90deg, #0056b3, #00a0e9);
 }
 
 .stat-number {
-  display: block;
-  font-size: 24px;
-  font-weight: 700;
-  color: #0056b3;
+    display: block;
+    font-size: 2.5rem;
+    font-weight: 800;
+    color: #2c3e50;
+    margin-bottom: 5px;
+    font-family: 'Kanit', sans-serif; /* 配合你网页的字体 */
 }
 
 .stat-label {
-  font-size: 12px;
-  color: #666;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
+    font-size: 0.85rem;
+    color: #8898aa;
+    text-transform: uppercase;
+    letter-spacing: 1.2px;
+    font-weight: 600;
 }
 
-/* 2. 论文列表区域 */
-.papers-list {
-  margin-top: 20px;
+/* --- 2. 论文列表区域 (Paper List) --- */
+.scholar-list {
+    list-style: none !important;
+    padding: 0;
+    margin: 0;
 }
 
-.paper-item {
-  padding: 12px 0;
-  border-bottom: 1px dashed #eee;
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-start;
+.scholar-item {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 18px 24px;
+    margin-bottom: 16px;
+    border: 1px solid #f1f3f5;
+    border-left: 5px solid #0056b3; /* 左侧蓝色强调线 */
+    box-shadow: 0 2px 5px rgba(0,0,0,0.02);
+    transition: all 0.25s ease-in-out;
+    position: relative;
 }
 
-.paper-content {
-  flex: 1;
-  padding-right: 15px;
+/* 论文卡片悬停 */
+.scholar-item:hover {
+    transform: translateX(8px); /* 向右轻微滑动 */
+    background-color: #fcfdff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.08);
 }
 
-.paper-title {
-  font-weight: 600;
-  color: #333;
-  text-decoration: none;
-  font-size: 16px;
-  display: block;
-  margin-bottom: 4px;
+/* 论文标题 */
+.scholar-title {
+    display: block;
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #343a40;
+    text-decoration: none;
+    margin-bottom: 12px;
+    line-height: 1.5;
+    transition: color 0.2s;
 }
 
-.paper-title:hover {
-  color: #0056b3;
-  text-decoration: underline;
+.scholar-title:hover {
+    color: #0056b3; /* 中南大学蓝 */
+    text-decoration: none;
 }
 
-.paper-meta {
-  font-size: 14px;
-  color: #777;
+/* 外链小图标 */
+.external-icon {
+    font-size: 0.8em;
+    color: #adb5bd;
+    margin-left: 5px;
+    vertical-align: middle;
+    opacity: 0;
+    transition: opacity 0.2s;
 }
 
-/* 引用数小角标 */
-.citation-badge {
-  background-color: #f0f7ff;
-  color: #0056b3;
-  padding: 2px 8px;
-  border-radius: 10px;
-  font-size: 12px;
-  font-weight: bold;
-  white-space: nowrap;
-  border: 1px solid #d0e3ff;
+.scholar-item:hover .external-icon {
+    opacity: 1; /* 悬停时才显示图标 */
 }
 
-.loading-text {
-  color: #888;
-  font-style: italic;
-  font-size: 14px;
+/* --- 底部元数据栏 --- */
+.scholar-meta {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+/* 胶囊标签通用样式 */
+.scholar-badge {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 5px 12px;
+    border-radius: 20px;
+    font-size: 0.85rem;
+    font-weight: 500;
+}
+
+/* 年份标签 */
+.scholar-badge.year {
+    background-color: #f8f9fa;
+    color: #636c72;
+    border: 1px solid #e9ecef;
+}
+
+/* 引用标签 (金色星星) */
+.scholar-badge.citation {
+    background-color: #fff8e1; /* 淡金色背景 */
+    color: #b7860b;            /* 深金色文字 */
+    border: 1px solid #ffeeba;
+}
+
+.scholar-badge.citation i {
+    color: #ffc107; /* 亮金色星星 */
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+    .stats-grid {
+        gap: 10px;
+    }
+    .stat-card {
+        padding: 15px;
+    }
+    .stat-number {
+        font-size: 2rem;
+    }
+    .scholar-item {
+        padding: 15px;
+    }
 }
