@@ -1,5 +1,5 @@
 {
-  "last_updated": "2025-12-22 00:57:28",
+  "last_updated": "2025-12-29 00:59:37",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
@@ -7,6 +7,12 @@
     {
       "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:UHK10RUVsp4C",
+      "citation": 0,
+      "year": "2025"
+    },
+    {
+      "title": "CiiNet: Self-Iterative Performance Optimization for Dynamic Networks Based on Causal Inference and Interpretable Evaluation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:JQOojiI6XY0C",
       "citation": 0,
       "year": "2025"
     },
@@ -55,12 +61,6 @@
     {
       "title": "Optimizing Smart Wireless Charging and Data Acquisition for UAVs with Battery Life Prediction",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:5awf1xo2G04C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "LRCTI: A Large Language Model-Based Framework for Multi-Step Evidence Retrieval and Reasoning in Cyber Threat Intelligence Credibility Verification",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eq2jaN3J8jMC",
       "citation": 0,
       "year": "2025"
     }
