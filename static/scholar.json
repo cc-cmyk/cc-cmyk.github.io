@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-01-12 00:58:59",
+  "last_updated": "2026-01-19 01:00:27",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Adaptive Large Language Model for Task Orchestration in 6G Space-Air-Ground Integrated Computing Power Networks",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uLbwQdceFCQC",
+      "citation": 0,
+      "year": "2025"
+    },
     {
       "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:UHK10RUVsp4C",
@@ -13,6 +19,12 @@
     {
       "title": "CiiNet: Self-Iterative Performance Optimization for Dynamic Networks Based on Causal Inference and Interpretable Evaluation",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:JQOojiI6XY0C",
+      "citation": 0,
+      "year": "2025"
+    },
+    {
+      "title": "Flexible IRS-Assisted Grouped Rate-Splitting Multiple Access for Optimizing Sum-Rate in Integrated Satellite-Terrestrial Networks",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:_Ybze24A_UAC",
       "citation": 0,
       "year": "2025"
     },
@@ -49,19 +61,7 @@
     {
       "title": "Unifying AI for Networking and Networking for AI: the Self-evolving Edge Learning",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:LjlpjdlvIbIC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "RTdetector: Deep Transformer Networks for Time Series Anomaly Detection Based on Reconstruction Trend",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:WqliGbK-hY8C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "Optimizing Smart Wireless Charging and Data Acquisition for UAVs with Battery Life Prediction",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:5awf1xo2G04C",
-      "citation": 0,
+      "citation": 1,
       "year": "2025"
     }
   ]
