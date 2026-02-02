@@ -1,5 +1,5 @@
 {
-  "last_updated": "2026-01-26 01:01:17",
+  "last_updated": "2026-02-02 01:08:59",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
@@ -7,6 +7,12 @@
     {
       "title": "Location Privacy-Aware High-Altitude Platforms Data Collection and Trajectory Optimization",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:Fu2w8maKXqMC",
+      "citation": 0,
+      "year": "2025"
+    },
+    {
+      "title": "UAV Trajectory Optimization Based on Pointer Networks and Adaptive Region Partitioning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:tKAzc9rXhukC",
       "citation": 0,
       "year": "2025"
     },
@@ -35,6 +41,12 @@
       "year": "2025"
     },
     {
+      "title": "The Divided-QUBO-Based Quantum Algorithm for Optimal Wireless Link Scheduling",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:7T2F9Uy0os0C",
+      "citation": 0,
+      "year": "2025"
+    },
+    {
       "title": "CiiNet: Self-Iterative Performance Optimization for Dynamic Networks Based on Causal Inference and Interpretable Evaluation",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:JQOojiI6XY0C",
       "citation": 0,
@@ -49,19 +61,7 @@
     {
       "title": "Wi-Fi 8: The next generation of wireless connectivity",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:dQ2og3OwTAUC",
-      "citation": 1,
-      "year": "2025"
-    },
-    {
-      "title": "FGAA: Enhancing adversarial robustness in AIoT-enabled smart systems via Fine-Grained Activation Alignment",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:hkOj_22Ku90C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "FUSE74: Unified Fault Code of Heterogeneous Equipment for LLM-Based Health Management",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:NJ774b8OgUMC",
-      "citation": 0,
+      "citation": 2,
       "year": "2025"
     }
   ]
