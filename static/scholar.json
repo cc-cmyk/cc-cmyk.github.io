@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-02-02 01:08:59",
+  "last_updated": "2026-02-09 01:10:55",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "An Ensemble Deep Reinforcement Learning–Based Asynchronous Scheduling Mechanism for 5G-TSN",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ZfRJV9d4-WMC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Location Privacy-Aware High-Altitude Platforms Data Collection and Trajectory Optimization",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:Fu2w8maKXqMC",
@@ -56,12 +62,6 @@
       "title": "Flexible IRS-Assisted Grouped Rate-Splitting Multiple Access for Optimizing Sum-Rate in Integrated Satellite-Terrestrial Networks",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:_Ybze24A_UAC",
       "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "Wi-Fi 8: The next generation of wireless connectivity",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:dQ2og3OwTAUC",
-      "citation": 2,
       "year": "2025"
     }
   ]
