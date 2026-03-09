@@ -1,68 +1,7 @@
 {
-  "last_updated": "2026-03-02 01:07:30",
+  "last_updated": "2026-03-09 01:08:39",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
-  "papers": [
-    {
-      "title": "An Ensemble Deep Reinforcement Learning–Based Asynchronous Scheduling Mechanism for 5G-TSN",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ZfRJV9d4-WMC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Location Privacy-Aware High-Altitude Platforms Data Collection and Trajectory Optimization",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:Fu2w8maKXqMC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "UAV Trajectory Optimization Based on Pointer Networks and Adaptive Region Partitioning",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:tKAzc9rXhukC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "A Survey on IEEE 802.11 bn Wi-Fi 8: Advantages of Ultra High Reliability for Next-Generation Wireless LANs",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:W5xh706n7nkC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "Adaptive Large Language Model for Task Orchestration in 6G Space-Air-Ground Integrated Computing Power Networks",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uLbwQdceFCQC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "UTIDH: Unstable Transformer With Imbalanced Data Handling for UAV Multivariate Time Series Fault Diagnosis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:kzcrU_BdoSEC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:UHK10RUVsp4C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "The Divided-QUBO-Based Quantum Algorithm for Optimal Wireless Link Scheduling",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:7T2F9Uy0os0C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "CiiNet: Self-Iterative Performance Optimization for Dynamic Networks Based on Causal Inference and Interpretable Evaluation",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:JQOojiI6XY0C",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "Flexible IRS-Assisted Grouped Rate-Splitting Multiple Access for Optimizing Sum-Rate in Integrated Satellite-Terrestrial Networks",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:_Ybze24A_UAC",
-      "citation": 1,
-      "year": "2025"
-    }
-  ]
+  "papers": []
 }
