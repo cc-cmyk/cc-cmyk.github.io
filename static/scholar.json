@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-04-20 01:26:53",
+  "last_updated": "2026-04-27 01:30:20",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Toward Efficient Zero Trust Space-Air-Ground Integrated Networks via Federated Reinforcement Learning with Blockchain",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:fEOibwPWpKIC",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "Task-Agentic Resource Scheduling in ISCC Networks via Multi-Agent LLMs",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:35r97b3x0nAC",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "FD-TE Diagnosis: Enhancing Microservice Fault Diagnosis With Frequency Domain Features and Centrality-Aware Time Encoding",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:-_dYPAW6P2MC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Breakout Local Search for Load-Balanced Federated Learning in Multi-BS Networks",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:evX43VCCuoAC",
@@ -43,24 +61,6 @@
     {
       "title": "Adaptive Large Language Model for Task Orchestration in 6G Space-Air-Ground Integrated Computing Power Networks",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uLbwQdceFCQC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "UTIDH: Unstable Transformer With Imbalanced Data Handling for UAV Multivariate Time Series Fault Diagnosis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:kzcrU_BdoSEC",
-      "citation": 2,
-      "year": "2025"
-    },
-    {
-      "title": "FaultDiffusion: Few-Shot Fault Time Series Generation with Diffusion Model",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:UHK10RUVsp4C",
-      "citation": 1,
-      "year": "2025"
-    },
-    {
-      "title": "The Divided-QUBO-Based Quantum Algorithm for Optimal Wireless Link Scheduling",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:7T2F9Uy0os0C",
       "citation": 0,
       "year": "2025"
     }
