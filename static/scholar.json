@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-05-11 01:59:18",
+  "last_updated": "2026-05-18 02:08:20",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Kgv: Integrating large language models with knowledge graphs for cyber threat intelligence credibility assessment",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eJXPG6dFmWUC",
+      "citation": 25,
+      "year": "2026"
+    },
+    {
+      "title": "Stability-Aware Communication via Weighted Potential Games for Multi-Agent Trajectory Prediction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:VLnqNzywnoUC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "PointShuffler: Accelerating Point Cloud Neural Networks on General-Purpose GPUs",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uJ-U7cs_P_0C",
@@ -51,18 +63,6 @@
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ZfRJV9d4-WMC",
       "citation": 0,
       "year": "2026"
-    },
-    {
-      "title": "Location Privacy-Aware High-Altitude Platforms Data Collection and Trajectory Optimization",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:Fu2w8maKXqMC",
-      "citation": 0,
-      "year": "2025"
-    },
-    {
-      "title": "UAV Trajectory Optimization Based on Pointer Networks and Adaptive Region Partitioning",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:tKAzc9rXhukC",
-      "citation": 0,
-      "year": "2025"
     }
   ]
 }
