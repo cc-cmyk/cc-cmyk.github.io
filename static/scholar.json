@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-05-25 02:13:08",
+  "last_updated": "2026-06-01 02:34:44",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Lightweight medical diagnosis via uncertainty-aware fuzzy knowledge distillation",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XD-gHx7UXLsC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Toward Realistic Wi-Fi Fault Diagnosis: A Multi-Modal Benchmark",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:t7zJ5fGR-2UC",
@@ -55,12 +61,6 @@
     {
       "title": "Breakout Local Search for Load-Balanced Federated Learning in Multi-BS Networks",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:evX43VCCuoAC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "MSADM: Large Language Model (LLM) Assisted End-to-End Network Health Management Based on Multi-Scale Semanticization",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:2KloaMYe4IUC",
       "citation": 0,
       "year": "2026"
     }
