@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-06-01 02:34:44",
+  "last_updated": "2026-06-08 02:33:53",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "PropLLM: Propagation-Aware Scene Reconstruction for Network Fault Diagnosis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:9Nmd_mFXekcC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Lightweight medical diagnosis via uncertainty-aware fuzzy knowledge distillation",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XD-gHx7UXLsC",
@@ -13,13 +19,13 @@
     {
       "title": "Toward Realistic Wi-Fi Fault Diagnosis: A Multi-Modal Benchmark",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:t7zJ5fGR-2UC",
-      "citation": 0,
+      "citation": 1,
       "year": "2026"
     },
     {
       "title": "Kgv: Integrating large language models with knowledge graphs for cyber threat intelligence credibility assessment",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eJXPG6dFmWUC",
-      "citation": 25,
+      "citation": 26,
       "year": "2026"
     },
     {
@@ -55,12 +61,6 @@
     {
       "title": "FD-TE Diagnosis: Enhancing Microservice Fault Diagnosis With Frequency Domain Features and Centrality-Aware Time Encoding",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:-_dYPAW6P2MC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Breakout Local Search for Load-Balanced Federated Learning in Multi-BS Networks",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:evX43VCCuoAC",
       "citation": 0,
       "year": "2026"
     }
