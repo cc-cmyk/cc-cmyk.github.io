@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-07-20 03:00:01",
+  "last_updated": "2026-07-27 01:50:37",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Collaborative Trajectory and Resource Optimization in Multi-UAV MEC under Jamming: An LLM-guided MARL Framework",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:0KyAp5RtaNEC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Space Computing Power Networks: A Survey",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:nrtMV_XWKgEC",
@@ -31,7 +37,7 @@
     {
       "title": "Kgv: Integrating large language models with knowledge graphs for cyber threat intelligence credibility assessment",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eJXPG6dFmWUC",
-      "citation": 27,
+      "citation": 28,
       "year": "2026"
     },
     {
@@ -56,12 +62,6 @@
       "title": "Toward Efficient Zero Trust Space-Air-Ground Integrated Networks via Federated Reinforcement Learning with Blockchain",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:fEOibwPWpKIC",
       "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Task-Agentic Resource Scheduling in ISCC Networks via Multi-Agent LLMs",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:35r97b3x0nAC",
-      "citation": 1,
       "year": "2026"
     }
   ]
