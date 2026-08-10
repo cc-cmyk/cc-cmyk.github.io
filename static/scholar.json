@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-08-03 01:45:27",
+  "last_updated": "2026-08-10 00:52:23",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "CARAF: Root Cause Analysis through Granger Causal Graphs with Ambiguous Residual Factors in Microservice Systems",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uc_IGeMz5qoC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Collaborative Trajectory and Resource Optimization in Multi-UAV MEC under Jamming: An LLM-guided MARL Framework",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:0KyAp5RtaNEC",
@@ -55,12 +61,6 @@
     {
       "title": "HGNet: Hypergraph Learning for Dynamic Heterogeneous Wireless Network Performance Prediction",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:j8SEvjWlNXcC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Toward Efficient Zero Trust Space-Air-Ground Integrated Networks via Federated Reinforcement Learning with Blockchain",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:fEOibwPWpKIC",
       "citation": 0,
       "year": "2026"
     }
