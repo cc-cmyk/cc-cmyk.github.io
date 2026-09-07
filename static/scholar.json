@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-08-31 02:07:48",
+  "last_updated": "2026-09-07 01:42:06",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Adapting network information into semantics for generalizable and plug-and-play multi-scenario network diagnosis",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XiVPGOgt02cC",
+      "citation": 8,
+      "year": "2026"
+    },
+    {
+      "title": "TB-Health: Task-Oriented Behavior Tree-Based Performance and Health Evaluation in Dynamic Networks",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:EkHepimYqZsC",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "SPFR: Semantic Potential Field Routing for the Distributed Internet of Agents",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ipzZ9siozwsC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "CARAF: Root Cause Analysis through Granger Causal Graphs with Ambiguous Residual Factors in Microservice Systems",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uc_IGeMz5qoC",
@@ -25,7 +43,7 @@
     {
       "title": "PropLLM: Propagation-Aware Scene Reconstruction for Network Fault Diagnosis",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:9Nmd_mFXekcC",
-      "citation": 1,
+      "citation": 2,
       "year": "2026"
     },
     {
@@ -44,24 +62,6 @@
       "title": "Kgv: Integrating large language models with knowledge graphs for cyber threat intelligence credibility assessment",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eJXPG6dFmWUC",
       "citation": 29,
-      "year": "2026"
-    },
-    {
-      "title": "Stability-Aware Communication via Weighted Potential Games for Multi-Agent Trajectory Prediction",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:VLnqNzywnoUC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "PointShuffler: Accelerating Point Cloud Neural Networks on General-Purpose GPUs",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uJ-U7cs_P_0C",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "HGNet: Hypergraph Learning for Dynamic Heterogeneous Wireless Network Performance Prediction",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:j8SEvjWlNXcC",
-      "citation": 2,
       "year": "2026"
     }
   ]
