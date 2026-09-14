@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-09-07 01:42:06",
+  "last_updated": "2026-09-14 02:10:34",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "Information-Entropy-Driven Fault Propagation Modeling for Probabilistic Network Performance Prediction",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:epqYDVWIO7EC",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "A large language model-based framework for multi-step evidence retrieval and reasoning in cyber threat intelligence credibility verification",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:zLWjf1WUPmwC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Adapting network information into semantics for generalizable and plug-and-play multi-scenario network diagnosis",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XiVPGOgt02cC",
@@ -50,18 +62,6 @@
       "title": "Lightweight medical diagnosis via uncertainty-aware fuzzy knowledge distillation",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XD-gHx7UXLsC",
       "citation": 1,
-      "year": "2026"
-    },
-    {
-      "title": "Toward Realistic Wi-Fi Fault Diagnosis: A Multi-Modal Benchmark",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:t7zJ5fGR-2UC",
-      "citation": 1,
-      "year": "2026"
-    },
-    {
-      "title": "Kgv: Integrating large language models with knowledge graphs for cyber threat intelligence credibility assessment",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:eJXPG6dFmWUC",
-      "citation": 29,
       "year": "2026"
     }
   ]
