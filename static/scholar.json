@@ -1,9 +1,21 @@
 {
-  "last_updated": "2026-09-14 02:10:34",
+  "last_updated": "2026-09-21 02:10:13",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "PALM: Protocol-Aware PCIe Link Fault Prediction for Large-Scale GPU Clusters",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uWiczbcajpAC",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "PIWich: Enhancing Quadrotor UAV Fault Diagnosis Under Imbalanced Data via Physics-Informed End-to-End Learning",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:vDijr-p_gm4C",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "Information-Entropy-Driven Fault Propagation Modeling for Probabilistic Network Performance Prediction",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:epqYDVWIO7EC",
@@ -35,7 +47,7 @@
       "year": "2026"
     },
     {
-      "title": "CARAF: Root Cause Analysis through Granger Causal Graphs with Ambiguous Residual Factors in Microservice Systems",
+      "title": "CARAF: Root Cause Analysis Through Granger Causal Graphs With Ambiguous Residual Factors in Microservice Systems",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uc_IGeMz5qoC",
       "citation": 0,
       "year": "2026"
@@ -50,18 +62,6 @@
       "title": "Space Computing Power Networks: A Survey",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:nrtMV_XWKgEC",
       "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "PropLLM: Propagation-Aware Scene Reconstruction for Network Fault Diagnosis",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:9Nmd_mFXekcC",
-      "citation": 2,
-      "year": "2026"
-    },
-    {
-      "title": "Lightweight medical diagnosis via uncertainty-aware fuzzy knowledge distillation",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XD-gHx7UXLsC",
-      "citation": 1,
       "year": "2026"
     }
   ]
