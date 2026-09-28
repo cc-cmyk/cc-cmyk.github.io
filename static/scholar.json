@@ -1,9 +1,27 @@
 {
-  "last_updated": "2026-09-21 02:10:13",
+  "last_updated": "2026-09-28 02:24:13",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "TSAE-MCS: A Data Quality Assurance Framework Based on Trustworthy Seed Guidance and Adaptive Exploration",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:AvfA0Oy_GE0C",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "A Hierarchical Fault Management Framework for Low-Altitude Economy Networks: A Digital Twin-Enabled Approach",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:URolC5Kub84C",
+      "citation": 0,
+      "year": "2026"
+    },
+    {
+      "title": "Adaptive Dominant Spectral Summary Guided Macro-Context Retrieval for Robust Multivariate Time Series Forecasting",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:z_wVstp3MssC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "PALM: Protocol-Aware PCIe Link Fault Prediction for Large-Scale GPU Clusters",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uWiczbcajpAC",
@@ -43,24 +61,6 @@
     {
       "title": "SPFR: Semantic Potential Field Routing for the Distributed Internet of Agents",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ipzZ9siozwsC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "CARAF: Root Cause Analysis Through Granger Causal Graphs With Ambiguous Residual Factors in Microservice Systems",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:uc_IGeMz5qoC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Collaborative Trajectory and Resource Optimization in Multi-UAV MEC under Jamming: An LLM-guided MARL Framework",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:0KyAp5RtaNEC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "Space Computing Power Networks: A Survey",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:nrtMV_XWKgEC",
       "citation": 0,
       "year": "2026"
     }
