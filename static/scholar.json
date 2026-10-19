@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-10-12 03:06:02",
+  "last_updated": "2026-10-19 02:14:21",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "DT-TS-CFST: Digital Twin-Driven Two-Stage Cross-Domain Fault Style Transfer CycleGAN for Fault Data Generation in Cellular-Connected UAV Systems",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:BUYA1_V_uYcC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "TSAE-MCS: A Data Quality Assurance Framework Based on Trustworthy Seed Guidance and Adaptive Exploration",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:AvfA0Oy_GE0C",
@@ -55,12 +61,6 @@
     {
       "title": "TB-Health: Task-Oriented Behavior Tree-Based Performance and Health Evaluation in Dynamic Networks",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:EkHepimYqZsC",
-      "citation": 0,
-      "year": "2026"
-    },
-    {
-      "title": "SPFR: Semantic Potential Field Routing for the Distributed Internet of Agents",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:ipzZ9siozwsC",
       "citation": 0,
       "year": "2026"
     }
