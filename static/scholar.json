@@ -1,9 +1,15 @@
 {
-  "last_updated": "2026-10-19 02:14:21",
+  "last_updated": "2026-10-26 02:09:09",
   "citations": 9515,
   "h_index": 41,
   "i10_index": 66,
   "papers": [
+    {
+      "title": "From Numerical Metrics to Semantic Evaluation: A Survey on Network Performance Evaluation with Large Language Models",
+      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:Z5m8FVwuT1cC",
+      "citation": 0,
+      "year": "2026"
+    },
     {
       "title": "DT-TS-CFST: Digital Twin-Driven Two-Stage Cross-Domain Fault Style Transfer CycleGAN for Fault Data Generation in Cellular-Connected UAV Systems",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:BUYA1_V_uYcC",
@@ -56,12 +62,6 @@
       "title": "Adapting network information into semantics for generalizable and plug-and-play multi-scenario network diagnosis",
       "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:XiVPGOgt02cC",
       "citation": 9,
-      "year": "2026"
-    },
-    {
-      "title": "TB-Health: Task-Oriented Behavior Tree-Based Performance and Health Evaluation in Dynamic Networks",
-      "link": "https://scholar.google.com/citations?view_op=view_citation&hl=en&user=_QJD5MgAAAAJ&sortby=pubdate&citation_for_view=_QJD5MgAAAAJ:EkHepimYqZsC",
-      "citation": 0,
       "year": "2026"
     }
   ]
